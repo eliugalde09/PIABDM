@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Curso || SkillHive</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="DetallesCurso.css">
+    <link rel="stylesheet" href="MiCurso.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <div class="imagen-logo">
+                <img src="imagenes/Logo2.png" alt="Logo" class="logo"> 
+            </div>
+            <a href="#" class="logo">SkillHive</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <i class='bx bx-menu'></i>
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Principal.php">Home</a></li>
+                    <li><a href="PerfilE.html">Mi Perfil</a></li> 
+                    <li><a href="Cursos.php">Cursos</a></li>
+                    <li><a href="login.php">Cerrar Sesión</a></li>
+                    <li><a href="Busqueda.php">Buscar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="curso-intro">
+            <img src="imagenes/Curso22.1.jpg" class="course-image" alt="Curso">
+            <div class="detalles-curso">
+                <h2>Maestro del Dibujo Digital: De Principiante a Profesional</h2>
+                <p>Aprende a dominar el arte del dibujo digital con técnicas avanzadas y herramientas de última generación.</p>
+                <p>Curso impartido por el/la docente: <strong>Amanda Torres</strong></p>
+                <p><strong>Nivel:</strong> <span id="curso-nivel">Intermedio</span></p>
+                <p class="precio2">$450</p>
+            </div>
+        </section>
+
+        <section class="progreso-curso">
+            <h3>Progreso del curso</h3>
+            <form id="formProgresoCurso">
+                <div class="tabla-modulos">
+                    <div class="modulo">
+                        <input class="form-check-input" type="checkbox" id="modulo1">
+                        <label class="form-check-label" for="modulo1">Módulo 1: Introducción al Dibujo Digital</label>
+                    </div>
+                    <div class="modulo">
+                        <input class="form-check-input" type="checkbox" id="modulo2">
+                        <label class="form-check-label" for="modulo2">Módulo 2: Herramientas y Técnicas</label>
+                    </div>
+                    <div class="modulo">
+                        <input class="form-check-input" type="checkbox" id="modulo3">
+                        <label class="form-check-label" for="modulo3">Módulo 3: Creación de tu Primer Proyecto</label>
+                    </div>
+                </div>
+                <button type="button" id="finalizarCursoBtn" class="btn btn-success" disabled>Finalizar Curso</button>
+            </form>
+
+            <div class="barra-progreso">
+                <label for="progreso">Progreso: </label>
+                <progress id="progreso" value="0" max="100"></progress>
+            </div>
+
+            <div id="mensajeFinalizacion" style="display: none;">
+                <p>¡Felicidades, acabas de completar tu curso!</p>
+            </div>
+
+            <section class="diploma-pdf">
+                <a href="Certificado_de_Reconocimiento.pdf" id="generarDiplomaBtn" class="btn btn-primary" style="display:none;" download="Certificado_de_Reconocimiento">Descargar Diploma</a>
+            </section>
+        </section>
+
+        <section class="comments-section">
+            <h3>Comentarios y Calificaciones</h3>
+            <div class="comments-list">
+                <!-- Comentarios existentes -->
+                <div class="comment">
+                    <img src="imagenes/Persona2.jpg" alt="Imagen del instructor" class="instructor-image">
+                    <p><a href="#" class="usuario-comment"><strong>Camila Hernández Peña</strong></a></p>
+                    <h6>20/Agosto/2024</h6>
+                    <h5>Me fascinó este curso, te enseña un poco de todo, es muy recomendable!</h5>
+                </div>
+                <div class="comment">
+                    <img src="imagenes/Persona1.jpg" alt="Imagen del instructor" class="instructor-image">
+                    <p><a href="#" class="usuario-comment"><strong>Juan Pérez</strong></a></p>
+                    <h6>16/Septiembre/2024</h6>
+                    <h5>Excelente curso, muy completo.</h5>
+                </div>
+            </div>
+
+            <div class="add-comment" id="add-comment-section" style="display: none;"> <!-- Ocultar inicialmente -->
+                <h4>Agregar nuevo comentario</h4>
+                <textarea placeholder="Escribe tu comentario aquí"></textarea>
+                <button id="enviarComentarioBtn">Enviar Comentario</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-container">
+        <div class="link">
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="#">Arte 2D</a></li>
+                <li><a href="#">Comunicación</a></li>
+                <li><a href="#">Programación</a></li>
+                <li><a href="#">Cocina</a></li>
+                <li><a href="#">Costura</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <h3>Sobre nosotros</h3>
+            <p>Somos una empresa en crecimiento con el objetivo de ofrecer cursos innovadores y de alta calidad. Únete a nuestra comunidad y descubre cómo podemos ayudarte a explorar nuevas habilidades y alcanzar tu máximo potencial.</p>
+        </div>
+    </footer>
+
+    <script src="MiCurso.js"></script>
+</body>
+</html>

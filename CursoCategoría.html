@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoría| SkillHive</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="CursoCategoría.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <div class="imagen-logo">
+                <img src="imagenes/Logo2.png" alt="Logo" class="logo"> 
+            </div>
+            <a href="#" class="logo">SkillHive</a>
+            
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <i class='bx bx-menu'></i>
+            </label>
+            
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Principal.php">Home</a></li>
+                    <li><a href="Perfil.php">Mi Perfil</a></li>  <!-- Este cambiará dependiendo el tipo de usuario (checar cómo hacerlo)-->
+                    <li><a href="Cursos.php">Cursos</a></li>
+                    <li><a href="login.php">Cerrar Sesión</a></li>
+                    <li><a href="Busqueda.php">Buscar</a></li>
+                </ul>
+            </nav>
+            
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <a href="Pago.html">
+                            <i class='bx bxs-cart' id="img-carrito"></i>
+                        </a>
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="cursos-container" id="lista-1">
+        
+        <h2>---Arte 2D---</h2>
+            
+            <div class="Cursos_s">
+
+                <div class="CursoS_1">
+                    <div class="curso">
+                        <img src="imagenes/Curso22.1.jpg">
+                        <div class="curso-txt">
+                            <h3><a href="DetallesCurso.html" class="link-curso">Maestro del Dibujo Digital: De Principiante a Profesional</a></h3>
+                            <p>Aprende a dominar el arte del dibujo digital con técnicas avanzadas y herramientas de última generación</p>
+                            <p class="precio">$450</p>
+                            
+                            <div class="valoraciones">
+                                <i class='bx bx-user'></i>
+                                <h4>2100</h4>
+                                <i class='bx bx-heart'></i>
+                                <h4>95%</h4>
+                            </div>
+
+                            <a href="#" class="agregar-carrito btn-3" data-id="19">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="CursoS_1">
+                    <div class="curso">
+                        <img src="imagenes/Curso33.jpg">
+                        <div class="curso-txt">
+                            <h3><a href="DetallesCurso.html" class="link-curso">Concept Art para Videojuegos: Diseño de Mundos y Personajes</a></h3>
+                            <p>Curso sobre la creación de concept art para videojuegos, incluyendo técnicas para diseñar mundos, personajes y elementos visuales que apoyen la narrativa del juego</p>
+                            <p class="precio">$615</p>
+                            
+                            <div class="valoraciones">
+                                <i class='bx bx-user'></i>
+                                <h4>690</h4>
+                                <i class='bx bx-heart'></i>
+                                <h4>92%</h4>
+                            </div>
+
+                            <a href="#" class="agregar-carrito btn-3" data-id="30">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="CursoS_1">
+                    <div class="curso">
+                        <img src="imagenes/Curso37.jpg">
+                        <div class="curso-txt">
+                            <h3><a href="DetallesCurso.html" class="link-curso">Anatomía para Artistas: Domina el Dibujo de la Figura Humana</a></h3>
+                            <p>Estudia la figura humana y aprende técnicas de dibujo anatómico que te ayudarán a mejorar tus habilidades artísticas</p>
+                            <p class="precio">$515</p>
+                            
+                            <div class="valoraciones">
+                                <i class='bx bx-user'></i>
+                                <h4>1820</h4>
+                                <i class='bx bx-heart'></i>
+                                <h4>97%</h4>
+                            </div>
+
+                            <a href="#" class="agregar-carrito btn-3" data-id="34">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="CursoS_1">
+                    <div class="curso">
+                        <img src="imagenes/Curso34.jpg">
+                        <div class="curso-txt">
+                            <h3><a href="DetallesCurso.html" class="link-curso">Arte en 2D para Animación: Crea Personajes y Escenarios para Movimiento</a></h3>
+                            <p>Aprende a crear arte 2D para animación, incluyendo la creación de personajes y escenarios que puedan ser animados de manera efectiva</p>
+                            <p class="precio">$550</p>
+                            
+                            <div class="valoraciones">
+                                <i class='bx bx-user'></i>
+                                <h4>740</h4>
+                                <i class='bx bx-heart'></i>
+                                <h4>97%</h4>
+                            </div>
+
+                            <a href="#" class="agregar-carrito btn-3" data-id="31">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="CursoS_1">
+                    <div class="curso">
+                        <img src="imagenes/Curso35.jpg">
+                        <div class="curso-txt">
+                            <h3><a href="DetallesCurso.html" class="link-curso">Dibujo de Retratos: Captura la Esencia de las Personas</a></h3>
+                            <p>Aprende técnicas para dibujar retratos realistas y expresivos, enfocándote en las características faciales, la expresión y el detalle</p>
+                            <p class="precio">$360</p>
+                            
+                            <div class="valoraciones">
+                                <i class='bx bx-user'></i>
+                                <h4>340</h4>
+                                <i class='bx bx-heart'></i>
+                                <h4>90%</h4>
+                            </div>
+
+                            <a href="#" class="agregar-carrito btn-3" data-id="32">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="CursoS_1">
+                    <div class="curso">
+                        <img src="imagenes/Curso36.jpg">
+                        <div class="curso-txt">
+                            <h3><a href="DetallesCurso.html" class="link-curso">Acuarelas Mágicas: Domina la Pintura con Agua</a></h3>
+                            <p>Aprende a crear paisajes, retratos y explora diferentes técnicas y efectos que se pueden lograr con acuarelas</p>
+                            <p class="precio">$590</p>
+                            
+                            <div class="valoraciones">
+                                <i class='bx bx-user'></i>
+                                <h4>425</h4>
+                                <i class='bx bx-heart'></i>
+                                <h4>81%</h4>
+                            </div>
+
+                            <a href="#" class="agregar-carrito btn-3" data-id="33">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <a href="#" class="btn-cargar" id="button-cargar">Cargar más</a>
+
+    </section>
+
+
+    <footer class="footer-container">
+        <div class="link">
+            <h3>Categorías</h3>
+             <ul>
+                 <li><a href="CursoCategoría.html">Arte 2D</a></li>
+                 <li><a href="CursoCategoría.html">Comunicación</a></li>
+                 <li><a href="CursoCategoría.html">Programación</a></li>
+                 <li><a href="CursoCategoría.html">Cocina</a></li>
+                 <li><a href="CursoCategoría.html">Costura</a></li>
+ 
+ 
+             </ul>
+         </div>
+ 
+         <div class="link">
+              <ul>
+                  <li><a href="CursoCategoría.html">Cine</a></li>
+                  <li><a href="CursoCategoría.html">Escritura</a></li>
+                  <li><a href="CursoCategoría.html">Nutrición</a></li>
+                  <li><a href="CursoCategoría.html">Mascotas</a></li>
+                  <li><a href="CursoCategoría.html">Música</a></li>
+  
+              </ul>
+          </div>
+         <div class="link">
+            <h3>Sobre nosotros</h3>
+            <p>
+                Somos una empresa en crecimiento con el objetivo de
+                ofrecer cursos innovadores y de alta calidad. 
+                Únete a nuestra comunidad y descubre cómo podemos 
+                ayudarte a explorar nuevas habilidades y alcanzar
+                tu máximo potencial.
+            </p>
+        </div>
+
+    </footer>
+
+
+</body>

@@ -1,0 +1,43 @@
+.filter-container{
+    background-color: rgb(135, 193, 207);
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.result-container{
+    background-color: rgb(254, 255, 248);
+    border-radius: 20px;
+    padding: 2rem;
+
+}
+
+
+.form input,
+.form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.form button{
+    width: 100%;
+    background-color:#ffbf36;
+    color: white;
+    border-radius: 5px;
+    border: solid 2px whitesmoke;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    box-shadow: 0 2px,5px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+}
+
+.form button:hover{
+    background-color: #2c2026;
+    color: white;
+}
+

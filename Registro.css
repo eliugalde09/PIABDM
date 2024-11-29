@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: "Dosis", sans-serif;
+}
+
+body{
+    display:flex; /*los elementos hijos se vuelven flexibles, se ajustan a lo demás*/
+    align-items: center; /*alinea los elementos de forma vertical*/
+    justify-content: center; /*alinea los elementos de forma horizontal*/
+    background-image: url(imagenes/Fondo4.jpg);
+    background-size: cover;
+}
+
+
+.Container-form{
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0,0,0,.1);
+    height: 600px;
+    max-width: 1000px;
+    margin: 10px;
+    border: solid thin whitesmoke;
+}
+
+
+/*-----Parte de inicio de sesión----*/
+.information{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(135, 193, 207);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.info-childs{
+    width: 100%;
+    padding: 0 30px; /*Modificamos para que el texto no esté tan pegado a los lados*/
+}
+
+.info-childs img{
+    width: 300px;
+    margin-bottom: -30px;
+    margin-top: -70px;
+}
+
+.info-childs h1{
+    margin-top: -15px;
+    font-family: "Sofadi One", system-ui;
+    font-weight: 800;
+    font-size: 40px;
+   margin-bottom: -10px;
+   color: #ffffff;
+}
+
+.info-childs h2{
+    font-size: 25px;
+    margin-top: 50px;
+    color: #2c2026;
+}
+
+.info-childs h3{
+    color: #fafce9;
+    margin-top: -5px;    
+    margin-bottom: 25px;
+}
+
+.info-childs button{
+    font-size: 15px;
+    background-color: #2c2026;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; /*espacio entre contenido y borde*/
+    color: rgb(255, 255, 255);
+}
+
+.info-childs button:hover{
+    background-color: #ffbf36;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+/*-----Formulario de registro----*/
+.form-information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+   /* background-color: rgba(255, 242, 165, 0.5);*/
+    /*background-color: rgba(255, 255, 255);*/
+    background-color: rgb(254, 255, 248);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.form-information-childs{
+    padding: 0 30px;
+    width: 80%;
+    height: 95%;
+}
+
+.form-information-childs h2{
+    font-size: 25px;
+    color: #2c2026;
+    font-weight: 800;
+    margin-top: -10px;
+}
+
+.form-information-childs img{
+    width: 30px;
+}
+
+/*.form label{
+    height: 30px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 0 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}*/
+
+.form input,
+.form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form input[type="file"] {
+    padding: 0;
+    border: none;
+}
+
+.form button{
+    background-color:#ffbf36;
+    color: white;
+    border-radius: 5px;
+    border: solid 2px whitesmoke;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    box-shadow: 0 2px,5px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+}
+
+.form button:hover{
+    background-color: #2c2026;
+}
+
+#error-message {
+    color: red;
+    background-color: rgb(223, 130, 130);
+    font-weight: bold;
+    text-align: center;
+    display: inline-block; /* Para que el borde se ajuste al contenido */
+
+}

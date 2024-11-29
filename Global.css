@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: "Dosis", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: floralwhite;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.title{
+    color: black;
+    font-size: 40px; 
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+.subtitle{
+    font-size: 20px;
+    color: #2c2026;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+/* DISEÑO DE TABLAS*/
+
+.table {
+	width:100%;
+	border:1px solid #EEEEEE;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font: normal 13px Arial, sans-serif;
+}
+
+.table thead th {
+    background-color: rgb(135, 193, 207);;
+    border: solid 1px #DDEEEE;
+    color: #336B6B;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #fff;
+    font-weight: bold;
+}
+
+.table tbody tr th {
+    color: #336B6B;
+    text-align: center;
+}
+
+.table tbody td {
+    border: solid 1px #DDEEEE;
+    color: #333;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+    text-align: center;
+}

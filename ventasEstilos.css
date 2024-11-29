@@ -1,0 +1,138 @@
+body{
+    background-color: floralwhite;
+}
+h2{
+    text-align: center;
+    padding: 1.5rem;
+    font-family: "Sofadi One", system-ui;
+    font-size: 30px;
+}
+h3{
+    font-family: "Sofadi One", system-ui;
+    font-size: 23px;
+    padding-top: 2rem;
+}
+
+h4{
+    font-size: 20px;
+    padding-top: 1rem;
+}
+
+h5{
+    font-size: 15px;
+}
+
+.titulo{
+    font-size: 20px;
+    padding-bottom: 1rem;
+}
+
+.contenedorIzq{
+    background-color: rgb(135, 193, 207);
+    margin: auto 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    display: block;
+   
+}
+
+.contenedorDer{
+    margin: 2rem;
+}
+
+select{
+    border-radius: 5px;
+    background-color: floralwhite;
+    width: 12rem;
+
+}
+
+.table{
+    margin-right: 5rem;
+}
+
+.fecha{
+    border-radius: 5px;
+    background-color: floralwhite;
+}
+
+.boton{
+    background-color: floralwhite ;
+    width: 5rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.boton:hover{
+    background-color: #ffbf36;
+}
+/*NAVBAR*/
+.menu.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 100px;
+    background-color: rgb(135, 193, 207); 
+    color: #f7f7f7; 
+    position: relative; 
+    max-width: 1800px; 
+    margin: 0 auto; 
+}
+
+
+.imagen-logo img {
+    width: 70px;
+}
+
+.menu .logo {
+    font-size: 25px;
+    color: #ffffff;
+    font-family: "Sofadi One", system-ui;
+    font-weight: 800;
+    text-decoration: none;
+    margin-left: 15px; 
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 20px; 
+}
+
+.navbar ul li a {
+    color: #f7f7f7;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s ease; 
+}
+
+.navbar ul li a:hover {
+    color: #ffbf36; 
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+label[for="menu"] {
+    display: none;
+    font-size: 30px;
+    color: #f7f7f7;
+    cursor: pointer;
+}
